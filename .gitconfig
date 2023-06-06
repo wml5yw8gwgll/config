@@ -1,0 +1,14 @@
+[user]
+    name = ziyaoxie
+    email = ziyaoxie@outlook.com
+[core]
+    editor = vim
+    autocrlf = input
+[commit]
+    template = ~/.commit_template
+[credential]
+    helper = store
+[pull]
+    rebase = true
+[http]
+    sslverify = false
