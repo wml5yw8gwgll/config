@@ -1,0 +1,13 @@
+FROM mysql:latest
+
+MAINTAINER ziyaoxie "ziyaoxie@outlook.com"
+
+# 环境变量
+ENV TZ "Asia/Shanghai"
+ENV MYSQL_ALLOW_EMPTY_PASSWORD "yes"
+
+# 容器自动执行目录
+COPY schema.sql /docker-entrypoint-initdb.d/schema.sql
+
+# 映射端口
+EXPOSE 3306
